@@ -10,7 +10,7 @@ export default new Vuex.Store({
         buttonsLocked: false,
         highlightedItem: ' ',
         level: 'easy',
-        sequenceLength: 3,
+        sequenceLength: 30,
         timeOutLength: 1500,
         round: 1,
         wholeSequence: [],
@@ -48,6 +48,7 @@ export default new Vuex.Store({
                 lastColor = colorNumber;
             }
         },
+
 
         setCurrentSequence(state, payload) {
             state.currentSequence = payload;

@@ -64,7 +64,7 @@ export default {
         onSequenceComplete() {
             this.addRound();
             this.setCurrentSequence(this.nextSequence());
-            setTimeout(this.playSequence, 2000, this.nextSequence());
+            setTimeout(this.playSequence, 3000, this.nextSequence());
         },
         playSequence(sequence) {
             if (sequence.length > 0) {
@@ -131,9 +131,17 @@ export default {
 }
 .button {
     border: none;
-    background-color: burlywood;
+    background-color: dodgerblue;
     padding: 15px;
     font-size: 16px;
     font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: deepskyblue;
 }
 </style>
