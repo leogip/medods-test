@@ -1,4 +1,4 @@
-# sxa
+# Simon Game Vue
 
 ## Project setup
 ```
